@@ -57,7 +57,7 @@ is
    
 --------------------------------------------------------------------------------
    function get_param_value(
-    p_param_name     in   app_parm.name%type
+    p_param_name     in   app_param.name%type
    )
    return anydata
    is
@@ -82,3 +82,4 @@ is
    end;
    
 end;
+/
