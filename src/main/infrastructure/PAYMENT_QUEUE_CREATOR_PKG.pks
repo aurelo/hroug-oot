@@ -9,14 +9,14 @@ as
  Package is distributed with example code for lecture Oracle Object Types given
  on HROUG 19(@link www.hroug.hr) conference. 
 
-@author Zlatko Gudasiæ
+%author Zlatko GudasiÃ¦
 
 CHANGE HISTORY (last one on top!)
 
 When         Who 
 dd.mm.yyyy   What
 ================================================================================
-13.08.2014   Zlatko Gudasiæ         
+13.08.2014   Zlatko GudasiÃ¦         
              Initial creation
              
 *******************************************************************************/

@@ -1,4 +1,4 @@
-﻿create or replace package body payment_service_pkg
+create or replace package body payment_service_pkg
 as
 /*******************************************************************************
  Service for closing receivables after payment has been made   
@@ -7,7 +7,7 @@ as
  on HROUG 19(@link www.hroug.hr) conference.
  Contains logic to close open receivables on customer payment 
 
-@author Zlatko Gudasić
+%author Zlatko Gudasić
 
 CHANGE HISTORY (last one on top!)
 
@@ -30,7 +30,7 @@ dd.mm.yyyy   What
 colection_is_initialized:
  Checks is collection initialized (is not assigned null reference)
 
-@param  p_receivables_tab  collection to check
+%param  p_receivables_tab  collection to check
 ------------------------------------------------------------------------------*/
      begin
          return p_receivables_tab is not null;
@@ -47,7 +47,7 @@ colection_is_initialized:
 collection_is_empty:
  Checks does collection have some data
 
-@param  p_receivables_tab  collection to check
+%param  p_receivables_tab  collection to check
 ------------------------------------------------------------------------------*/
      begin
          return colection_is_initialized(p_receivables_tab)
@@ -66,9 +66,9 @@ filter_closable:
  From potential receivables returns collection of receivables that could be 
  closed with given amount
 
-@param   p_paid_amount        Amount available for closing
-@param   p_sorted_receivables collection of open receivables that need closing
-@return  collection of potentially closable receivables 
+%param   p_paid_amount        Amount available for closing
+%param   p_sorted_receivables collection of open receivables that need closing
+%return  collection of potentially closable receivables 
 ------------------------------------------------------------------------------*/
          v_closable_tab       account_receivable_tt := account_receivable_tt(); 
          v_amount_left        number := p_paid_amount;
