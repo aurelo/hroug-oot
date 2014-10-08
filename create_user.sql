@@ -35,6 +35,9 @@ grant create view to &&hroug_schema;
 grant create procedure to &&hroug_schema;
 grant aq_administrator_role to &&hroug_schema;
 grant aq_user_role  to &&hroug_schema;
+grant execute on dbms_aqadm to &&hroug_schema;
+grant execute on dbms_aq to &&hroug_schema;
+
 
 
 PROMPT Done.
