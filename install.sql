@@ -15,6 +15,13 @@ PROMPT Creating package specs
 
 ------------                       CREATE TYPES                       ----------
 @@src/main/domain/account_receivable.sql
+@@src/main/infrastructure/message_handler_master_ot.tps
+@@src/main/infrastructure/message_handler_ot.tps
+@@src/main/infrastructure/message_handler_ot.tpb
+@@src/main/infrastructure/output_handler_ot.tps
+@@src/main/infrastructure/output_handler_ot.tpb
+@@src/main/infrastructure/email_handler_ot.tps
+@@src/main/infrastructure/email_handler_ot.tpb
 
 ------------                       CREATE VIEWS                       ----------
 @@src/main/infrastructure/app_env_param_vw.sql
