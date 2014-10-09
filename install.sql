@@ -13,6 +13,9 @@ PROMPT Creating package specs
 @@src/main/domain/transaction_service_pkg.pks
 @@src/main/infrastructure/payment_queue_creator_pkg.pks
 
+------------                       CREATE TYPES                       ----------
+@@src/main/domain/account_receivable.sql
+
 ------------                       CREATE VIEWS                       ----------
 @@src/main/infrastructure/app_env_param_vw.sql
 
